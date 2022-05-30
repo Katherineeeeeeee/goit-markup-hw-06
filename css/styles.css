@@ -639,9 +639,17 @@ color: var(--primary-white-colour);
     /* Button in html*/
 
     .button.order {
+
+        margin: 30px auto 0 auto;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
+
+    width: 200px;
+    height: 50px;
+    left: 700px;
+    top: 430px;
+
     border-radius: 4px;
 
     color: var(--primary-white-colour);
@@ -796,11 +804,10 @@ color: var(--primary-white-colour);
 
 .modal{
     position: absolute;
-    width: 528px;
-    height: 581px;
-    /* left: 536px;
-    top: 221px; */
+    max-width: 528px;
+    max-height: 581px;
 
+    padding: 40px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -832,3 +839,61 @@ color: var(--primary-white-colour);
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
 }
+
+/* Form */
+
+.modal-title{
+    display: block;
+    text-align: center;
+    margin-bottom: 12px;
+
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+
+    color: var(--title-text-colour);
+}
+
+/* .modal-form{} */
+
+
+.modal-label {
+    position: relative;
+
+    display: block;
+    margin-bottom: 10px;
+}
+
+.modal-label:last-of-type{
+    margin-bottom: 20px;
+}
+
+.modal-input{
+    width: 100%;
+    margin-top: 4px;
+    padding: 11px;
+    padding-left: 42px;
+}
+
+
+.modal-icon{
+    position: absolute;
+    bottom: 11px;
+    left: 12px;
+}
+
+
+
+/* .modal-btn{
+    margin-top: 30px;
+    mr and ml 164px
+    margin-bottom: 43px;
+} */
+
+
+
+
+
+/* .modal-text-area{} */
+
