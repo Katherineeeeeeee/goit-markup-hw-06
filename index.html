@@ -441,12 +441,25 @@
             </li>
           </ul>
         </div>
+
+        <div class="subscribe">
+          <strong class="footer-strong subscribe-title">Подпишитесь на рассылку</strong>
+          <form class="subscribe-form">
+            <label>
+              <input class="subscribe-email" type="email" name="" placeholder="Email" />
+            </label>
+
+            <button class="button order subscribe-btn" type="submit">
+              Подписаться
+
+              <svg class="subscribe-icon" width="24" height="24">
+                <use href="./images/icons/sprite.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
-
-
-
-
 
     <!-- Modal form -->
     <div class="backdrop is-hidden" data-modal>
@@ -456,9 +469,6 @@
             <use href="./images/icons/sprite.svg#close-icon"></use>
           </svg>
         </button>
-
-
-
 
         <!-- Form -->
         <strong class="modal-title">Оставьте свои данные, мы вам перезвоним</strong>
@@ -491,7 +501,7 @@
           <label class="modal-label">
             <span>Комментарий</span>
             <textarea
-              class="modal-text-area"
+              class="modal-textarea"
               name="user-message"
               rows="5"
               placeholder="Введите текст"
@@ -499,19 +509,31 @@
           </label>
 
           <div class="modal-agreement">
-          <label>
-            <input class="modal-input" type="checkbox" name="user-checkbox"/>
-            <span class="modal-checkbox">
-            <svg class="modal-icon" width="16" height="15">
-              <use href="./images/icons/sprite.svg#checkbox"></use>
-            </svg>
-          </span>
-        </label>
-        
-            <span>Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a></span>
-        </div>
+            <label>
+              <input
+                class="checkbox visually-hidden"
+                type="checkbox"
+                name="user-checkbox"
+                id="user-checkbox"
+                tabindex="-1"
+              />
+              <span
+                class="modal-checkbox"
+                role="checkbox"
+                aria-labelledby="user-checkbox"
+                tabindex="0"
+              >
+                <svg class="modal-checkbox-icon" width="16" height="15">
+                  <use href="./images/icons/sprite.svg#checkbox"></use>
+                </svg>
+              </span>
+            </label>
 
-
+            <span class="modal-agreement-txt"
+              >Соглашаюсь с рассылкой и принимаю&nbsp;
+              <a class="modal-agreement-link" href="">Условия договора</a></span
+            >
+          </div>
           <button class="button order modal-btn" type="submit">Отправить</button>
         </form>
       </div>
