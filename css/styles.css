@@ -873,6 +873,7 @@ color: var(--primary-white-colour);
 .modal{
     position: absolute;
     width: 528px;
+    min-height: 518px;
 
     padding: 40px;
     top: 50%;
